@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alumni Directory</title>
+  <link rel="stylesheet" href="style 2.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/ULM_alumni.png"></a>
+            
+            <div class="nav-links">
+
+                <ul>
+                    <li><a href="Index.html">HOME</a></li>
+                    <li><a href="Alumni Profiles.html">ALUMNI PROFILES</a></li>
+                    <li><a href="Business.html">ALUMNI-OWNED BUSINESSES</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+  
+  <main>
+    <section class="grid-container">
+        <div class="info-box" onclick="viewBusinessProfile({
+            firstName: 'John',
+            lastName: 'Doe',
+            email: 'john.doe@email.com',
+            address: '123 Elm St.',
+            jobTitle: 'Software Engineer',
+            businessName: 'DoeTech Solutions',
+            businessAddress: '123 Elm St.',
+            businessCity: 'Techville',
+            businessState: 'TX',
+            businessZip: '75001',
+            businessPhone: '(123) 456-7890',
+            businessEmail: 'support@doetech.com',
+            businessWebsite: 'https://www.doetech.com',
+            businessDescription: 'Custom software development and IT services',
+            businessCategory: 'Technology',
+            alumniDiscount: 'Yes',
+            alumniDiscountDescription: '15% off for alumni members',
+            businessLogoLink: 'logo1.svg',
+            userId: '101'
+          })">
+            <h2>John Doe</h2>
+            <p>Email: john.doe@email.com</p>
+            <p>Job Title: Software Engineer</p>
+            <p>Business: DoeTech Solutions</p>
+          </div>
+          
+          <div class="info-box" onclick="viewBusinessProfile({
+            firstName: 'Jane',
+            lastName: 'Smith',
+            email: 'jane.smith@email.com',
+            address: '456 Oak Dr.',
+            jobTitle: 'Marketing Lead',
+            businessName: 'Smith Marketing',
+            businessAddress: '456 Oak Dr.',
+            businessCity: 'Createtown',
+            businessState: 'CA',
+            businessZip: '90210',
+            businessPhone: '(987) 654-3210',
+            businessEmail: 'marketing@smithmktg.com',
+            businessWebsite: 'https://www.smithmktg.com',
+            businessDescription: 'Comprehensive marketing solutions',
+            businessCategory: 'Marketing',
+            alumniDiscount: 'No',
+            alumniDiscountDescription: '',
+            businessLogoLink: 'logo2.svg',
+            userId: '102'
+          })">
+            <h2>Jane Smith</h2>
+            <p>Email: jane.smith@email.com</p>
+            <p>Job Title: Marketing Lead</p>
+            <p>Business: Smith Marketing</p>
+          </div>
+          
+          <div class="info-box" onclick="viewBusinessProfile({
+            firstName: 'Mike',
+            lastName: 'Brown',
+            email: 'mike.brown@email.com',
+            address: '789 Pine Ave.',
+            jobTitle: 'Architect',
+            businessName: 'Brown Designs',
+            businessAddress: '789 Pine Ave.',
+            businessCity: 'Design City',
+            businessState: 'NY',
+            businessZip: '10001',
+            businessPhone: '(212) 555-1234',
+            businessEmail: 'info@browndesigns.com',
+            businessWebsite: 'https://www.browndesigns.com',
+            businessDescription: 'Innovative architectural and design solutions',
+            businessCategory: 'Architecture',
+            alumniDiscount: 'Yes',
+            alumniDiscountDescription: '10% on consultations',
+            businessLogoLink: 'logo3.svg',
+            userId: '103'
+          })">
+            <h2>Mike Brown</h2>
+            <p>Email: mike.brown@email.com</p>
+            <p>Job Title: Architect</p>
+            <p>Business: Brown Designs</p>
+          </div>
+          
+          <div class="info-box" onclick="viewBusinessProfile({
+            firstName: 'Sarah',
+            lastName: 'Wilson',
+            email: 'sarah.wilson@email.com',
+            address: '321 Maple Blvd.',
+            jobTitle: 'Consultant',
+            businessName: 'Wilson Consulting',
+            businessAddress: '321 Maple Blvd.',
+            businessCity: 'Consultville',
+            businessState: 'FL',
+            businessZip: '33101',
+            businessPhone: '(305) 555-5678',
+            businessEmail: 'contact@wilsonconsult.com',
+            businessWebsite: 'https://www.wilsonconsult.com',
+            businessDescription: 'Business consulting and strategy planning',
+            businessCategory: 'Consulting',
+            alumniDiscount: 'No',
+            alumniDiscountDescription: '',
+            businessLogoLink: 'logo4.svg',
+            userId: '104'
+          })">
+            <h2>Sarah Wilson</h2>
+            <p>Email: sarah.wilson@email.com</p>
+            <p>Job Title: Consultant</p>
+            <p>Business: Wilson Consulting</p>
+          </div>
+          
+          <div class="info-box" onclick="viewBusinessProfile({
+            firstName: 'Robert',
+            lastName: 'Davis',
+            email: 'robert.davis@email.com',
+            address: '654 Cedar Ln.',
+            jobTitle: 'CEO',
+            businessName: 'Davis Innovations',
+            businessAddress: '654 Cedar Ln.',
+            businessCity: 'Innovation City',
+            businessState: 'TX',
+            businessZip: '75002',
+            businessPhone: '(512) 555-3456',
+            businessEmail: 'ceo@davisinnovations.com',
+            businessWebsite: 'https://www.davisinnovations.com',
+            businessDescription: 'Leading innovation in tech solutions',
+            businessCategory: 'Technology',
+            alumniDiscount: 'Yes',
+            alumniDiscountDescription: '20% discount for first service',
+            businessLogoLink: 'logo5.svg',
+            userId: '105'
+          })">
+            <h2>Robert Davis</h2>
+            <p>Email: robert.davis@email.com</p>
+            <p>Job Title: CEO</p>
+            <p>Business: Davis Innovations</p>
+          </div>
+          
+          <div class="info-box" onclick="viewBusinessProfile({
+            firstName: 'Emily',
+            lastName: 'Clark',
+            email: 'emily.clark@email.com',
+            address: '987 Birch Ct.',
+            jobTitle: 'HR Manager',
+            businessName: 'Clark HR Services',
+            businessAddress: '987 Birch Ct.',
+            businessCity: 'People Town',
+            businessState: 'IL',
+            businessZip: '60607',
+            businessPhone: '(312) 555-6789',
+            businessEmail: 'hr@clarkhr.com',
+            businessWebsite: 'https://www.clarkhr.com',
+            businessDescription: 'HR consulting and recruitment',
+            businessCategory: 'Human Resources',
+            alumniDiscount: 'Yes',
+            alumniDiscountDescription: '5% for alumni-run companies',
+            businessLogoLink: 'logo6.svg',
+            userId: '106'
+          })">
+            <h2>Emily Clark</h2>
+            <p>Email: emily.clark@email.com</p>
+            <p>Job Title: HR Manager</p>
+            <p>Business: Clark HR Services</p>
+          </div>
+          
+          <div class="info-box" onclick="viewBusinessProfile({
+            firstName: 'Daniel',
+            lastName: 'Lee',
+            email: 'daniel.lee@email.com',
+            address: '246 Spruce Dr.',
+            jobTitle: 'Data Analyst',
+            businessName: 'Lee Analytics',
+            businessAddress: '246 Spruce Dr.',
+            businessCity: 'Dataville',
+            businessState: 'MA',
+            businessZip: '2108',
+            businessPhone: '(617) 555-1234',
+            businessEmail: 'data@leeanalytics.com',
+            businessWebsite: 'https://www.leeanalytics.com',
+            businessDescription: 'Data analysis and business insights',
+            businessCategory: 'Data Analytics',
+            alumniDiscount: 'No',
+            alumniDiscountDescription: '',
+            businessLogoLink: 'logo7.svg',
+            userId: '107'
+          })">
+            <h2>Daniel Lee</h2>
+            <p>Email: daniel.lee@email.com</p>
+            <p>Job Title: Data Analyst</p>
+            <p>Business: Lee Analytics</p>
+          </div>
+          
+          <div class="info-box" onclick="viewBusinessProfile({
+            firstName: 'Chloe',
+            lastName: 'Martinez',
+            email: 'chloe.martinez@email.com',
+            address: '159 Elm St.',
+            jobTitle: 'Web Developer',
+            businessName: 'Martinez Web Dev',
+            businessAddress: '159 Elm St.',
+            businessCity: 'Code City',
+            businessState: 'WA',
+            businessZip: '98101',
+            businessPhone: '(206) 555-9876',
+            businessEmail: 'web@martinezwebdev.com',
+            businessWebsite: 'https://www.martinezwebdev.com',
+            businessDescription: 'Custom web development and maintenance',
+            businessCategory: 'Web Development',
+            alumniDiscount: 'Yes',
+            alumniDiscountDescription: '10% discount for new alumni clients',
+            businessLogoLink: 'logo8.svg',
+            userId: '108'
+          })">
+            <h2>Chloe Martinez</h2>
+            <p>Email: chloe.martinez@email.com</p>
+            <p>Job Title: Web Developer</p>
+            <p>Business: Martinez Web Dev</p>
+          </div>
+          
+          <div class="info-box" onclick="viewBusinessProfile({
+            firstName: 'Oliver',
+            lastName: 'White',
+            email: 'oliver.white@email.com',
+            address: '753 Poplar St.',
+            jobTitle: 'Financial Advisor',
+            businessName: 'White Finance',
+            businessAddress: '753 Poplar St.',
+            businessCity: 'Moneyville',
+            businessState: 'NJ',
+            businessZip: '7001',
+            businessPhone: '(908) 555-3456',
+            businessEmail: 'advisor@whitefinance.com',
+            businessWebsite: 'https://www.whitefinance.com',
+            businessDescription: 'Financial planning and investment strategies',
+            businessCategory: 'Finance',
+            alumniDiscount: 'No',
+            alumniDiscountDescription: '',
+            businessLogoLink: 'logo9.svg',
+            userId: '109'
+          })">
+            <h2>Oliver White</h2>
+            <p>Email: oliver.white@email.com</p>
+            <p>Job Title: Financial Advisor</p>
+            <p>Business: White Finance</p>
+          </div>
+          
+          <div class="info-box" onclick="viewBusinessProfile({
+            firstName: 'Grace',
+            lastName: 'Thompson',
+            email: 'grace.thompson@email.com',
+            address: '951 Walnut Ln.',
+            jobTitle: 'Legal Advisor',
+            businessName: 'Thompson Legal',
+            businessAddress: '951 Walnut Ln.',
+            businessCity: 'Law City',
+            businessState: 'CA',
+            businessZip: '90211',
+            businessPhone: '(213) 555-9012',
+            businessEmail: 'legal@thompsonlegal.com',
+            businessWebsite: 'https://www.thompsonlegal.com',
+            businessDescription: 'Corporate law and legal consultation',
+            businessCategory: 'Legal Services',
+            alumniDiscount: 'Yes',
+            alumniDiscountDescription: 'Free initial consultation',
+            businessLogoLink: 'logo10.svg',
+            userId: '110'
+          })">
+            <h2>Grace Thompson</h2>
+            <p>Email: grace.thompson@email.com</p>
+            <p>Job Title: Legal Advisor</p>
+            <p>Business: Thompson Legal</p>
+          </div>
+          
+          <div class="info-box" onclick="viewBusinessProfile({
+            firstName: 'Ethan',
+            lastName: 'Garcia',
+            email: 'ethan.garcia@email.com',
+            address: '357 Chestnut Dr.',
+            jobTitle: 'Event Planner',
+            businessName: 'Garcia Events',
+            businessAddress: '357 Chestnut Dr.',
+            businessCity: 'Party Town',
+            businessState: 'AZ',
+            businessZip: '85001',
+            businessPhone: '(602) 555-5678',
+            businessEmail: 'events@garciaevents.com',
+            businessWebsite: 'https://www.garciaevents.com',
+            businessDescription: 'Event planning and coordination services',
+            businessCategory: 'Event Management',
+            alumniDiscount: 'No',
+            alumniDiscountDescription: '',
+            businessLogoLink: 'logo11.svg',
+            userId: '111'
+          })">
+            <h2>Ethan Garcia</h2>
+            <p>Email: ethan.garcia@email.com</p>
+            <p>Job Title: Event Planner</p>
+            <p>Business: Garcia Events</p>
+          </div>
+          
+          <div class="info-box" onclick="viewBusinessProfile({
+            firstName: 'Ava',
+            lastName: 'Harris',
+            email: 'ava.harris@email.com',
+            address: '753 Cypress St.',
+            jobTitle: 'Graphic Designer',
+            businessName: 'Harris Designs',
+            businessAddress: '753 Cypress St.',
+            businessCity: 'Creative City',
+            businessState: 'OR',
+            businessZip: '97201',
+            businessPhone: '(503) 555-7890',
+            businessEmail: 'design@harrisdesigns.com',
+            businessWebsite: 'https://www.harrisdesigns.com',
+            businessDescription: 'Graphic design and creative branding',
+            businessCategory: 'Design',
+            alumniDiscount: 'Yes',
+            alumniDiscountDescription: '15% discount on first project',
+            businessLogoLink: 'logo1.svg',
+            userId: '112'
+          })">
+            <h2>Ava Harris</h2>
+            <p>Email: ava.harris@email.com</p>
+            <p>Job Title: Graphic Designer</p>
+            <p>Business: Harris Designs</p>
+          </div>
+          
+          <div class="info-box" onclick="viewBusinessProfile({
+            firstName: 'Liam',
+            lastName: 'Cooper',
+            email: 'liam.cooper@email.com',
+            address: '123 Ash St.',
+            jobTitle: 'Operations Lead',
+            businessName: 'Cooper Logistics',
+            businessAddress: '123 Ash St.',
+            businessCity: 'Delivery City',
+            businessState: 'TX',
+            businessZip: '75003',
+            businessPhone: '(214) 555-1234',
+            businessEmail: 'logistics@cooperlogistics.com',
+            businessWebsite: 'https://www.cooperlogistics.com',
+            businessDescription: 'Logistics and supply chain management',
+            businessCategory: 'Logistics',
+            alumniDiscount: 'No',
+            alumniDiscountDescription: '',
+            businessLogoLink: 'logo2.svg',
+            userId: '113'
+          })">
+            <h2>Liam Cooper</h2>
+            <p>Email: liam.cooper@email.com</p>
+            <p>Job Title: Operations Lead</p>
+            <p>Business: Cooper Logistics</p>
+          </div>
+          
+          <div class="info-box" onclick="viewBusinessProfile({
+            firstName: 'Mia',
+            lastName: 'Gonzalez',
+            email: 'mia.gonzalez@email.com',
+            address: '456 Beech St.',
+            jobTitle: 'Marketing Analyst',
+            businessName: 'Gonzalez Marketing',
+            businessAddress: '456 Beech St.',
+            businessCity: 'Adville',
+            businessState: 'CA',
+            businessZip: '90212',
+            businessPhone: '(415) 555-5678',
+            businessEmail: 'marketing@gonzalezmktg.com',
+            businessWebsite: 'https://www.gonzalezmktg.com',
+            businessDescription: 'Marketing research and campaign analytics',
+            businessCategory: 'Marketing',
+            alumniDiscount: 'Yes',
+            alumniDiscountDescription: '10% discount on first consultation',
+            businessLogoLink: 'logo3.svg',
+            userId: '114'
+          })">
+            <h2>Mia Gonzalez</h2>
+            <p>Email: mia.gonzalez@email.com</p>
+            <p>Job Title: Marketing Analyst</p>
+            <p>Business: Gonzalez Marketing</p>
+          </div>
+          
+          <div class="info-box" onclick="viewBusinessProfile({
+            firstName: 'William',
+            lastName: 'Nelson',
+            email: 'william.nelson@email.com',
+            address: '789 Fir Ln.',
+            jobTitle: 'Cybersecurity Lead',
+            businessName: 'Nelson Security',
+            businessAddress: '789 Fir Ln.',
+            businessCity: 'Secure Town',
+            businessState: 'NY',
+            businessZip: '10002',
+            businessPhone: '(917) 555-6789',
+            businessEmail: 'support@nelsonsecurity.com',
+            businessWebsite: 'https://www.nelsonsecurity.com',
+            businessDescription: 'Cybersecurity solutions for businesses',
+            businessCategory: 'Cybersecurity',
+            alumniDiscount: 'No',
+            alumniDiscountDescription: '',
+            businessLogoLink: 'logo4.svg',
+            userId: '115'
+          })">
+            <h2>William Nelson</h2>
+            <p>Email: william.nelson@email.com</p>
+            <p>Job Title: Cybersecurity Lead</p>
+            <p>Business: Nelson Security</p>
+          </div>
+          
+          <div class="info-box" onclick="viewBusinessProfile({
+            firstName: 'Ella',
+            lastName: 'Scott',
+            email: 'ella.scott@email.com',
+            address: '321 Maple St.',
+            jobTitle: 'Interior Designer',
+            businessName: 'Scott Interiors',
+            businessAddress: '321 Maple St.',
+            businessCity: 'Design City',
+            businessState: 'FL',
+            businessZip: '33102',
+            businessPhone: '(305) 555-1234',
+            businessEmail: 'interiors@scottinteriors.com',
+            businessWebsite: 'https://www.scottinteriors.com',
+            businessDescription: 'Interior design for homes and offices',
+            businessCategory: 'Design',
+            alumniDiscount: 'Yes',
+            alumniDiscountDescription: '5% discount for returning clients',
+            businessLogoLink: 'logo5.svg',
+            userId: '116'
+          })">
+            <h2>Ella Scott</h2>
+            <p>Email: ella.scott@email.com</p>
+            <p>Job Title: Interior Designer</p>
+            <p>Business: Scott Interiors</p>
+          </div>
+          
+          <div class="info-box" onclick="viewBusinessProfile({
+            firstName: 'Jack',
+            lastName: 'Adams',
+            email: 'jack.adams@email.com',
+            address: '654 Birch Ln.',
+            jobTitle: 'Fitness Coach',
+            businessName: 'Adams Fitness',
+            businessAddress: '654 Birch Ln.',
+            businessCity: 'Fit Town',
+            businessState: 'TX',
+            businessZip: '75004',
+            businessPhone: '(972) 555-4567',
+            businessEmail: 'coach@adamsfitness.com',
+            businessWebsite: 'https://www.adamsfitness.com',
+            businessDescription: 'Personal fitness coaching and nutrition plans',
+            businessCategory: 'Fitness',
+            alumniDiscount: 'Yes',
+            alumniDiscountDescription: 'Free first training session',
+            businessLogoLink: 'logo6.svg',
+            userId: '117'
+          })">
+            <h2>Jack Adams</h2>
+            <p>Email: jack.adams@email.com</p>
+            <p>Job Title: Fitness Coach</p>
+            <p>Business: Adams Fitness</p>
+          </div>
+          
+          <div class="info-box" onclick="viewBusinessProfile({
+            firstName: 'Sophie',
+            lastName: 'Baker',
+            email: 'sophie.baker@email.com',
+            address: '258 Cedar St.',
+            jobTitle: 'Life Coach',
+            businessName: 'Baker Coaching',
+            businessAddress: '258 Cedar St.',
+            businessCity: 'Inspiration City',
+            businessState: 'CA',
+            businessZip: '90213',
+            businessPhone: '(415) 555-7891',
+            businessEmail: 'info@bakercoaching.com',
+            businessWebsite: 'https://www.bakercoaching.com',
+            businessDescription: 'Life coaching for personal growth and development',
+            businessCategory: 'Coaching',
+            alumniDiscount: 'No',
+            alumniDiscountDescription: '',
+            businessLogoLink: 'logo7.svg',
+            userId: '118'
+          })">
+            <h2>Sophie Baker</h2>
+            <p>Email: sophie.baker@email.com</p>
+            <p>Job Title: Life Coach</p>
+            <p>Business: Baker Coaching</p>
+          </div>
+          
+      <!-- Repeat ends here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Alumni Directory</p>
+  </footer>
+
+  <script>
+    function viewBusinessProfile(profile) {
+      localStorage.setItem('selectedProfile', JSON.stringify(profile));
+      window.location.href = 'Business.html';
+    }
+  </script>
+</body>
+</html>

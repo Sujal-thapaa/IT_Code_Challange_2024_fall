@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Details</title>
+  <link rel="stylesheet" href="style 2.css">
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/ULM_alumni2.png"></a>
+            
+            <div class="nav-links">
+
+                <ul>
+                    <li><a href="Index.html">HOME</a></li>
+                    <li><a href="Alumni Profiles.html">ALUMNI PROFILES</a></li>
+                    <li><a href="Business.html">ALUMNI BUSINESSES</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    <header>
+        <h1 id="personName">Business Information</h1>
+      </header>
+
+  
+  <main class="details-container">
+    <div class="detail-box">
+      <h2>Business Information</h2>
+      <p><strong>First Name:</strong> <span id="firstName"></span></p>
+      <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>
+      <p><strong>Address:</strong> <span id="address"></span></p>
+      <p><strong>Job Title:</strong> <span id="jobTitle"></span></p>
+      <p><strong>Business Name:</strong> <span id="businessName"></span></p>
+      <p><strong>Business Address:</strong> <span id="businessAddress"></span>, <span id="businessCity"></span>, <span id="businessState"></span> <span id="businessZip"></span></p>
+      <p><strong>Business Phone:</strong> <span id="businessPhone"></span></p>
+      <p><strong>Business Email:</strong> <span id="businessEmail"></span></p>
+      <p><strong>Business Website:</strong> <a id="businessWebsite" href="" target="_blank">Visit Website</a></p>
+      <p><strong>Business Description:</strong> <span id="businessDescription"></span></p>
+      <p><strong>Business Category:</strong> <span id="businessCategory"></span></p>
+      <p><strong>Alumni Discount:</strong> <span id="alumniDiscount"></span></p>
+      <p><strong>Discount Description:</strong> <span id="alumniDiscountDescription"></span></p>
+      <p><strong>Business Logo:</strong> <img id="businessLogo" src="" alt="Business Logo" width="100px"></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Alumni Directory</p>
+  </footer>
+
+  <script>
+    // Retrieve the profile data from localStorage
+    const selectedProfile = JSON.parse(localStorage.getItem('selectedProfile'));
+
+    if (selectedProfile) {
+      document.getElementById('personName').textContent = selectedProfile.firstName + ' ' + selectedProfile.lastName + ' - Business Information';
+      document.getElementById('firstName').textContent = selectedProfile.firstName;
+      document.getElementById('lastName').textContent = selectedProfile.lastName;
+      document.getElementById('email').textContent = selectedProfile.email;
+      document.getElementById('address').textContent = selectedProfile.address;
+      document.getElementById('jobTitle').textContent = selectedProfile.jobTitle;
+      document.getElementById('businessName').textContent = selectedProfile.businessName;
+      document.getElementById('businessAddress').textContent = selectedProfile.businessAddress;
+      document.getElementById('businessCity').textContent = selectedProfile.businessCity;
+      document.getElementById('businessState').textContent = selectedProfile.businessState;
+      document.getElementById('businessZip').textContent = selectedProfile.businessZip;
+      document.getElementById('businessPhone').textContent = selectedProfile.businessPhone;
+      document.getElementById('businessEmail').textContent = selectedProfile.businessEmail;
+      document.getElementById('businessWebsite').textContent = selectedProfile.businessWebsite;
+      document.getElementById('businessWebsite').href = selectedProfile.businessWebsite;
+      document.getElementById('businessDescription').textContent = selectedProfile.businessDescription;
+      document.getElementById('businessCategory').textContent = selectedProfile.businessCategory;
+      document.getElementById('alumniDiscount').textContent = selectedProfile.alumniDiscount;
+      document.getElementById('alumniDiscountDescription').textContent = selectedProfile.alumniDiscountDescription;
+      document.getElementById('businessLogo').src = selectedProfile.businessLogoLink;
+    } else {
+      alert("No profile information available!");
+    }
+  </script>
+</body>
+</html>
